@@ -14,8 +14,12 @@ int main(int argc, char **argv) {
     }
     int count_primes = 0;
     for(int i = 2; i <= N; ++i) {
-        if(primes[i]) ++count_primes;
+        if(primes[i]) {
+            ++count_primes;
+            cout << i << " ";
+        }
     }
+    cout << '\n';
     cout << count_primes << endl;
     delete[] primes; 
     return 0;
