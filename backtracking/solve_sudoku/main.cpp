@@ -15,5 +15,6 @@ int main(int argc, char **argv) {
     board.print();
     cout << "SOLVED ? " << (board.solve() ? "YES" : "NO") << "\n";
     board.print();
+    cout << "VALID ? "  << (board.check_sol() ? "YES" : "NO") << "\n";
     return 0;
 }
